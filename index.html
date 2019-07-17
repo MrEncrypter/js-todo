@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <h2>ToDo App</h2>
+    </head>
+    <body>
+        <div class="container">
+            <hr/>
+            <div id="addtask" class="col-12">
+                    <h3>Add new task!</h3>
+                <form class="form-inline">
+                      <div class="form-group">
+                        <input type="text" class="form-control mx-3" id="txtTask" placeholder="Enter task">
+                      </div>
+                      <button type="button" class="btn btn-primary mx-2" id="btn-submit">Submit</button>
+                </form>
+            </div>
+            <hr/>
+            <div id="tasks" class="d-flex col-12">
+                <div id="pending-list" class="col-6">
+                    <h4>Pending list</h4>
+                    <ul class="list-group-flush" id="pending-tasks"></ul>
+                </div>
+                <div id="completed-list" class="col-6">
+                    <h4>Completed List</h4>
+                    <ul class="list-group-flush" id="completed-tasks"></ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./app.js"></script>
+</html>
